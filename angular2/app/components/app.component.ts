@@ -2,7 +2,7 @@ import {Component} from "angular2/core";
 
 @Component({
     selector: "my-app",
-    templateUrl:  'app/app.html'
+    templateUrl:  'app/components/app.html'
 })
 
 export class AppComponent{
@@ -12,7 +12,7 @@ export class AppComponent{
     otrotextomas: string;
     constructor(){
 
-        this.holamundo = "Hola mundo";
+        this.holamundo = "Hola mundooooooo";
         this.otrotexto = "otro texto";
         this.otrotextomas = "ola q ases";
 
