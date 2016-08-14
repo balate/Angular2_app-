@@ -20,11 +20,14 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.holamundo = "Hola mundo";
+                    this.otrotexto = "otro texto";
+                    this.otrotextomas = "ola q ases";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: "my-app",
-                        template: "<h1>Hola Mundo</h1>\n    <p>otro texto</p>\n    <p>otro texo mas...</p>"
+                        templateUrl: 'app/app.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
