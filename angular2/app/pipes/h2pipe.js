@@ -11,28 +11,29 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HomePage;
+    var H2Pipe;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HomePage = (function () {
-                function HomePage() {
-                    this.h1text = "Hola Mundo";
+            H2Pipe = (function () {
+                function H2Pipe() {
                 }
-                HomePage = __decorate([
-                    core_1.Component({
-                        selector: "my-app",
-                        templateUrl: 'app/components/home/home.html',
+                H2Pipe.prototype.transform = function (value, args) {
+                    return "<h2>" + value + "</h2>";
+                };
+                H2Pipe = __decorate([
+                    core_1.Pipe({
+                        name: "pipeh2"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HomePage);
-                return HomePage;
+                ], H2Pipe);
+                return H2Pipe;
             }());
-            exports_1("HomePage", HomePage);
+            exports_1("H2Pipe", H2Pipe);
         }
     }
 });
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=h2pipe.js.map
