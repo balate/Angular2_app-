@@ -1,23 +1,20 @@
 import {Component} from "angular2/core";
-import {EventsDir} from "../../directives/event"
+import {JoinPipe} from "../../pipes/joinpipe";
 
 @Component({
     selector: "my-app",
     templateUrl:  'app/components/home/home.html',
-    directives: [EventsDir]
+    pipes: [JoinPipe]
 })
 
 export class HomePage{
 
-    holamundo: string;
-    otrotexto: string;
-    otrotextomas: string;
-    constructor(){
 
-        this.holamundo = "Hola mundooooooo";
-        this.otrotexto = "otro texto";
-        this.otrotextomas = "ola q ases";
+    colors: Array<string>;
 
+    constructor() {
+
+        this.colors = ["rojo", "naranja", "azul", "amarillo", "verde","blanco"];
     }
 
 }
